@@ -16,36 +16,21 @@ export default function App() {
   }, [dispatch]);
 
   return (
-    <Routes>
-      <Route path="/login" element={<LoginPage />} />
-      <Route element={<Layout />}>
-        <Route
-          path="/home"
-          element={
-            <RequireAuth>
-              <div>Welcome to the Home Page</div>
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="/activation"
-          element={
-            <RequireAuth>
-              <div>Activation Page</div>
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="/account"
-          element={
-            <RequireAuth>
-              <AccountPage />
-            </RequireAuth>
-          }
-        />
+<Routes>
+  <Route path="/login" element={<LoginPage />} />
+  <Route 
+    element={
+      <RequireAuth>
+        <Layout />
+      </RequireAuth>
+    }
+  >
+    <Route path="/home" element={<div>Home Page</div>} />
+    <Route path="/activation" element={<div>Activation Page</div>} />
+    <Route path="/account" element={<AccountPage />} />
 
-        <Route path="*" element={<LoginPage />} />
-      </Route>
-    </Routes>
+    <Route path="*" element={<LoginPage />} />
+  </Route>
+</Routes>
   );
 }
