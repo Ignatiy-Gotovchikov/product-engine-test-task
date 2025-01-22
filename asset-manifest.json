@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/product-engine-test-task/static/css/main.064f875a.css",
+    "main.js": "/product-engine-test-task/static/js/main.ed4f356a.js",
+    "static/js/453.119a1176.chunk.js": "/product-engine-test-task/static/js/453.119a1176.chunk.js",
+    "index.html": "/product-engine-test-task/index.html",
+    "main.064f875a.css.map": "/product-engine-test-task/static/css/main.064f875a.css.map",
+    "main.ed4f356a.js.map": "/product-engine-test-task/static/js/main.ed4f356a.js.map",
+    "453.119a1176.chunk.js.map": "/product-engine-test-task/static/js/453.119a1176.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.064f875a.css",
+    "static/js/main.ed4f356a.js"
+  ]
+}
